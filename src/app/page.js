@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div className="grid grid-cols-4 gap-5">
       {
-        blogs.map((blog) => <Blogs key={blog.id}></Blogs>)
+        blogs.map((blog) => <Blogs key={blog.id} blog={blog}></Blogs>)
       }
     </div>
   );
